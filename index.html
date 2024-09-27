@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="application-name" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cucina Italiana</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon-32x32.jpg">
+    <!-- CSS -->
+    <link rel="stylesheet" rel="preload" href="style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" rel="preload" href="media.css" media="print" onload="this.media='all'">
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+        integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- DEVICON -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header id="header">
+        <nav class="nav-menu">
+            <ul class="navbar">
+                <li class="logo">
+                    <div id="logo"><a href="#">Cucina Italiana</a></div>
+                </li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#info" class="nav-link">Chi siamo</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#menu" class="nav-link">Menù</a></li>
+                    <li><a href="#recensioni" class="nav-link">Recensioni</a></li>
+                    <li><a href="#contatti" class="nav-link">Contatti</a></li>
+                    <label for="check" class="nav-toggle" id="close-menu"><i class="ri-close-large-line"></i></label>
+                </span>
+                <label for="check" class="nav-toggle" id="open-menu"><i class="ri-menu-line"></i> </label>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECTION HOME -->
+        <section id="home" class="section">
+            <div class="container-corpo">
+                <h1>Cucina italiana</h1>
+
+                <a href="#info" class="piede">
+                    <span class="work">
+                        Scopri chi siamo
+                    </span>
+                    <div class="arrow-down">
+                        <i class="ri-arrow-down-fill"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CHI SIAMO -->
+        <section id="info" class="section">
+            <div class="testa-contatti">
+                <h2>Chi siamo</h2>
+            </div>
+            <!-- esterno del ristorante -->
+            <div class="content-row">
+                <div class="image">
+                    <img src="images/img-1.jpg" alt="Foto 1">
+                </div>
+                <div class="text">
+                    <h1>La Cucina Italiana</h1>
+                    <p>Da generazioni, la nostra famiglia si dedica alla cucina italiana con amore e dedizione. La
+                        passione
+                        per i sapori autentici ci ha guidato nella creazione di piatti che celebrano la tradizione,
+                        utilizzando solo ingredienti freschi e locali. Ogni giorno lavoriamo con l'obiettivo di offrire
+                        ai
+                        nostri ospiti un'esperienza culinaria che ricordi i sapori di casa.</p>
+                </div>
+            </div>
+
+            <!-- img dei nostri chef -->
+            <div class="content-row">
+                <div class="text">
+                    <h1>I nostri chef</h1>
+                    <p>Ogni piatto che esce dalla nostra cucina è il frutto di un'attenta selezione degli ingredienti.
+                        Crediamo fermamente che la qualità inizi dalla scelta delle materie prime: verdure fresche,
+                        carni
+                        selezionate, pesce di giornata e pasta fatta a mano. Il nostro impegno è quello di offrire solo
+                        il
+                        meglio, sempre.</p>
+                </div>
+                <div class="image">
+                    <img src="images/chef.jpg" alt="Foto 2">
+                </div>
+            </div>
+
+
+            <!-- img staff -->
+            <div class="content-row">
+                <div class="image">
+                    <img src="images/staff.jpg" alt="Foto 3">
+                </div>
+                <div class="text">
+                    <h1>Il nostro staff</h1>
+                    <p>Siamo più di un ristorante, siamo una famiglia. E come in ogni famiglia italiana che si rispetti,
+                        l’ospitalità è al primo posto. Il nostro team ti accoglierà sempre con un sorriso, pronto a
+                        farti
+                        sentire a casa e a rendere speciale ogni momento trascorso con noi.</p>
+                </div>
+            </div>
+
+            <!-- img cliente soddisfatto -->
+            <div class="content-row">
+                <div class="text">
+                    <h1>Sempre a vostra disposizione!</h1>
+                    <p>Il nostro obiettivo è sempre stato lo stesso: far sentire ogni cliente come se fosse a casa
+                        propria.
+                        Che tu venga per un pranzo veloce o per una cena importante, ci impegniamo a offrirti il massimo
+                        in
+                        termini di servizio, qualità e attenzione ai dettagli.</p>
+                </div>
+                <div class="image">
+                    <img src="images/clienti.jpg" alt="Foto 4">
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/interno-1.jpg" alt="Interno del ristorante 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/interno-2.jpg" alt="Interno del ristorante 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/interno-3.jpg" alt="Interno del ristorante 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/caffe.jpg" alt="Interno del ristorante 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/interno-5.jpg" alt="Interno del ristorante 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/interno-6.jpg" alt="Interno del ristorante 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/interno-7.jpg" alt="Interno del ristorante 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/interno-8.jpg" alt="Interno del ristorante 8">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/interno-9.jpg" alt="Interno del ristorante 9">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/interno-10.jpg" alt="Interno del ristorante 10">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/interno-11.jpg" alt="Interno del ristorante 11">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/img-1.jpg" alt="Interno del ristorante 12">
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section id="menu">
+            <h2>Il nostro menù</h2>
+            <div class="menu-categories">
+                <div class="menu-item" onclick="showMenu('antipasti')">
+                    <i class="ri-bread-line"></i>
+                    <h3>Antipasti</h3>
+                    <div id="antipasti-bar" class="menu-bar"></div>
+                </div>
+                <div class="menu-item" onclick="showMenu('primi')">
+                    <i class="ri-restaurant-line"></i>
+                    <h3>Primi</h3>
+                    <div id="primi-bar" class="menu-bar"></div>
+                </div>
+                <div class="menu-item" onclick="showMenu('secondi')">
+                    <i class="ri-knife-line"></i>
+                    <h3>Secondi</h3>
+                    <div id="secondi-bar" class="menu-bar"></div>
+                </div>
+                <div class="menu-item" onclick="showMenu('dolci')">
+                    <i class="ri-cake-2-line"></i>
+                    <h3>Dolci</h3>
+                    <div id="dolci-bar" class="menu-bar"></div>
+                </div>
+                <div class="menu-item" onclick="showMenu('bevande')">
+                    <i class="ri-goblet-line"></i>
+                    <h3>Distillati</h3>
+                    <div id="bevande-bar" class="menu-bar"></div>
+                </div>
+            </div>
+
+            <!-- Contenuto dei menu -->
+            <div class="contenuto">
+                <div id="menu-content">
+                    <!-- Antipasti -->
+                    <div id="antipasti" class="menu-details">
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/bruschetta.jpg" alt="Bruschetta">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Bruschetta</h4>
+                                    <span>4 €</span>
+                                </div>
+                                <hr>
+                                <p>Pane, Pomodoro, Aglio, Basilico, Olio d'oliva.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/suppli.jpg" alt="Supplì">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Supplì</h4>
+                                    <span>5 €</span>
+                                </div>
+                                <hr>
+                                <p>Riso, mozzarella, uova, olio, sale, pomodoro, pangrattato.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/tagliere-misto-solo-salumi.jpg" alt="Tagliere">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Tagliere di salumi</h4>
+                                    <span>10 €</span>
+                                </div>
+                                <hr>
+                                <p>Mortadella, prosciutto crudo, prosciutto cotto.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/focaccia.jpg" alt="Focaccia">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Focaccia</h4>
+                                    <span>4 €</span>
+                                </div>
+                                <hr>
+                                <p>Acqua, farina, lievito, olio, sale.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Primi -->
+                    <div id="primi" class="menu-details">
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/amtriciana.jpg" alt="Amatriciana">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Rigatoni amatriciana</h4>
+                                    <span>9 €</span>
+                                </div>
+                                <hr>
+                                <p>rigatoni, pomodoro, pecorino, guanciale, sale, peperoncino.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/cacio.jpg" alt="cacio e pepe">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Spaghetti cacio e pepe</h4>
+                                    <span>9 €</span>
+                                </div>
+                                <hr>
+                                <p>Spaghetti, pecorino, pepe, sale.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/carbonara.jpg" alt="carbonara">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Spaghetti carbonara</h4>
+                                    <span>10 €</span>
+                                </div>
+                                <hr>
+                                <p>Mezze maniche, uova, pepe, sale, pecorino.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/gricia.jpg" alt="gricia">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Mezze maniche gricia</h4>
+                                    <span>9 €</span>
+                                </div>
+                                <hr>
+                                <p>Spaghetti, pecorino, parmigiano, pepe, sale.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Secondi -->
+                    <div id="secondi" class="menu-details">
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/coda.jpg" alt="coda alla vaccinara">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Coda alla vaccinara</h4>
+                                    <span>14 €</span>
+                                </div>
+                                <hr>
+                                <p>Coda di bue, pomodoro, olio, sale, pepe, sedano,
+                                    carote.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/saltimbocca.jpg" alt="Saltimbocca">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Saltimbocca alla romana</h4>
+                                    <span>12 €</span>
+                                </div>
+                                <hr>
+                                <p>Fettine di vitello, salvia, burro, sale, pepe,
+                                    prosciutto crudo, olio.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/pollo.jpg" alt="Pollo">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Pollo con i peperoni</h4>
+                                    <span>11 €</span>
+                                </div>
+                                <hr>
+                                <p>Pollo, peperoni, olio, sale, pepe.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/abbacchio-a-scottadito.jpg" alt="Abbacchio">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Abbacchio alla scottadito</h4>
+                                    <span>14 €</span>
+                                </div>
+                                <hr>
+                                <p>Abbacchio, olio, sale, pepe, limone.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dolci -->
+                    <div id="dolci" class="menu-details">
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/tiramisu.jpg" alt="Tiramisù">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Tiramisù</h4>
+                                    <span>4 €</span>
+                                </div>
+                                <hr>
+                                <p>Uova, cioccolato, lievito, farina,
+                                    sale, olio, burro, zucchero.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/frutta.jpg" alt="Frutta">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Frutta di stagione</h4>
+                                    <span>2 €</span>
+                                </div>
+                                <hr>
+                                <p>Frutta.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/tortino.jpg" alt="Tortino">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Tortino al cioccolato</h4>
+                                    <span>4 €</span>
+                                </div>
+                                <hr>
+                                <p>Uova, cioccolato, lievito,
+                                    farina, sale, olio, burro,
+                                    zucchero.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/panna.jpg" alt="Panna">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Panna cotta</h4>
+                                    <span>4 €</span>
+                                </div>
+                                <hr>
+                                <p>Panna.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bevande -->
+                    <div id="bevande" class="menu-details">
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/caffe.jpg" alt="Caffè">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Caffè</h4>
+                                    <span>1.50 €</span>
+                                </div>
+                                <hr>
+                                <p>Caffè.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/amro.jpg" alt="Amaro">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Amaro del capo
+                                    </h4>
+                                    <span>3 €</span>
+                                </div>
+                                <hr>
+                                <p>Amaro.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/limoncello.jpg" alt="Limoncello">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Limoncello
+                                    </h4>
+                                    <span>3 €</span>
+                                </div>
+                                <hr>
+                                <p>Limoncello.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="container-img">
+                                <img src="images/grappa.jpg" alt="Grappa">
+                            </div>
+                            <div class="dish-info">
+                                <div class="dish-info-testa">
+                                    <h4>Grappa</h4>
+                                    <span>3 €</span>
+                                </div>
+                                <hr>
+                                <p>Grappa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- RECENSIONI -->
+        <section id="recensioni">
+            <div class="container-recensioni">
+                <h2>Cosa dicono di noi</h2>
+                <div class="contenuto-recensioni">
+                    <span class="virgolette">“</span>
+                    <p class="testo-recensioni"></p>
+                    <span class="virgolette">”</span>
+                    <div class="cliente-info">
+                        <h3 class="cliente-nome"></h3>
+                        <p class="cliente-title">Cliente del locale</p>
+                    </div>
+                </div>
+                <div class="nav-arrows">
+                    <span class="prev-arrow"><i class="ri-arrow-left-s-line"></i></span>
+                    <span class="next-arrow"><i class="ri-arrow-right-s-line"></i></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATTI -->
+        <section id="contatti" class="section">
+            <div class="testa-contatti">
+                <h2>Contatti</h2>
+            </div>
+            <div class="container-contatti">
+                <div class="container-sx">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5940.245777004493!2d12.489655974998296!3d41.89021416465722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1727366197549!5m2!1sit!2sit"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="container-dx">
+                    <form autocomplete="off">
+                        <div class="input-box">
+                            <i class="ri-user-3-line"></i>
+                            <input type="text" id="nm" class="focus" placeholder="Nome" name="name" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="ri-mail-line"></i>
+                            <input type="email" id="email" class="focus" placeholder="Email" name="user" required>
+                        </div>
+                        <div class="input-box">
+                            <i id="icon-text" class="ri-text-snippet"></i>
+                            <textarea id="text" class="focus" placeholder="Scrivimi" name="message"></textarea>
+                        </div>
+                        <div class="input-box">
+                            <button type="submit" id="btn-invia">INVIA</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="footer">
+        <footer class="container-footer">
+            <div class="footer-section">
+                <ul>
+                    <h3>Links</h3>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#info">Chi siamo</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#menu">Menù</a></li>
+                    <li><a href="#recensioni">Recensioni</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <ul class="social-icons">
+                    <h3 id="t-social">Social</h3>
+                    <li>
+                        <a href="" target="_blank">
+                            <i class="ri-facebook-circle-fill"></i>
+                            <span>Cucina Italiana</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <i class="ri-instagram-line"></i>
+                            <span>Cucina Italiana</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <i class="ri-twitter-x-line"></i>
+                            <span>Cucina Italiana</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <i class="ri-tiktok-fill"></i>
+                            <span>Cucina Italiana</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <i class="ri-mail-line"></i>
+                            <span>CucinaItaliana@gmail.com</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <div class="container-cont">
+                    <h3>Orari di apertura:</h3>
+                    <p>Da Lunedì alla domenica!</p>
+                    <p>Ore 12.00-15:00 18:00-24:00</p>
+                    <p>Martedi chiuso</p>
+                    <p>Che aspetti,<a href="#contatti">Vieni a trovarci</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="footer-bottom scroll-scale">
+            <p>&copy; 2024 Gianluca Valenzi. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <a href="#home" class="arrow-up"><i class="ri-arrow-up-line"></i></a>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
