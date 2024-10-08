@@ -106,3 +106,60 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// home animation 
+document.addEventListener("DOMContentLoaded", function () {
+    const h1 = document.querySelector(".container-corpo h1");
+    const p = document.querySelector(".container-corpo p");
+    const a = document.querySelector(".container-corpo a");
+
+    function showElements() {
+        // Mostra gli elementi uno alla volta
+        setTimeout(() => {
+            h1.style.opacity = '1';
+            h1.style.transform = 'translateY(0)';
+        }, 2000);
+
+        setTimeout(() => {
+            p.style.opacity = '1';
+            p.style.transform = 'translateY(0)';
+        }, 4000);
+
+        setTimeout(() => {
+            a.style.opacity = '1';
+            a.style.transform = 'translateY(0)';
+        }, 6000);
+    }
+
+    function hideElements() {
+        // Nascondi gli elementi uno alla volta (prima scompare l'h1, poi il p, infine l'a)
+        setTimeout(() => {
+            h1.style.opacity = '0';
+            h1.style.transform = 'translateY(20px)';
+        }, 0);
+
+        setTimeout(() => {
+            p.style.opacity = '0';
+            p.style.transform = 'translateY(20px)';
+        }, 2000);
+
+        setTimeout(() => {
+            a.style.opacity = '0';
+            a.style.transform = 'translateY(20px)';
+        }, 4000);
+    }
+
+    function cycleAnimation() {
+        hideElements(); // Prima nascondi tutto
+        setTimeout(() => {
+            showElements(); // Dopo inizia a mostrare di nuovo
+        }, 3000); // Attendi 3 secondi prima di ricominciare
+    }
+
+    // Richiama la funzione ogni 11 secondi (6 secondi di animazione + 5 di pausa)
+    setInterval(cycleAnimation, 18000);
+
+    // Esegui la funzione la prima volta
+    showElements();
+});
+
+
