@@ -248,35 +248,12 @@ header::after {
 .btn-chi-siamo:hover {
     box-shadow: 0 0 8px var(--color1);
 }
-/* 
-.container-corpo h1,
-.container-corpo p,
-.container-corpo a {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1.5s forwards;
-}
-
-.container-corpo h1 {
-    animation-delay: 1s;
-
-}
-
-.container-corpo p {
-    animation-delay: 3s;
-}
-
-.container-corpo a {
-    animation-delay: 5s;
-}
- */
 
 .container-corpo h1,
 .container-corpo p,
 .container-corpo a {
     opacity: 0;
     transition: opacity 1s ease, transform 1s ease;
-    /* transition: ; */
 }
 
 .container-corpo h1 {
@@ -290,11 +267,6 @@ header::after {
 .container-corpo a {
     transform: translateY(20px);
 }
-
-
-
-
-
 
 /* -------- CHI SIAMO -------- */
 #info {
@@ -308,12 +280,13 @@ header::after {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    overflow: hidden;
 }
 
 .image {
     flex: 1;
     padding: 0 40px;
-    max-width: 650px;
+    max-width: 600px;
     width: auto;
     /* height: 400px; */
     height: auto;
@@ -362,7 +335,7 @@ header::after {
 /*  ------------------------------- GALLERY ------------------------------- */
 /* Style per la sezione Gallery */
 #gallery {
-    padding: 40px;
+    padding: 60px;
     background-color: var(--color2);
     text-align: center;
 }
@@ -385,7 +358,6 @@ header::after {
     box-shadow: 0 4px 16px var(--color1);
     border: 2px solid #fff;
     box-sizing: border-box;
-    /* width: 360px; */
     width: auto;
     height: 240px;
 }
@@ -403,12 +375,13 @@ header::after {
 }
 
 
-/*  ------------------------------------------------- MENU ----------------------------- */
+/*  ------------------------------ MENU ----------------------------- */
 /* Stile generale */
 #menu {
     height: 100%;
     background-image: url(images/sfondo-lavagna.jpg);
     padding: 60px 0;
+    overflow: hidden;
 }
 
 #menu h2 {
@@ -424,6 +397,7 @@ header::after {
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    
     /* transition: all .9s; */
 
 }
@@ -632,7 +606,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 
 .testa-contatti {
@@ -643,6 +617,7 @@ hr {
     width: 100%;
     height: 100%;
     display: flex;
+    overflow: hidden;
 }
 
 .container-sx {

@@ -13,6 +13,7 @@ const reviews = [
     },
 ];
 
+
 let currentReviewIndex = 0;
 
 function displayReview(index) {
@@ -161,5 +162,35 @@ document.addEventListener("DOMContentLoaded", function () {
     // Esegui la funzione la prima volta
     showElements();
 });
+
+
+
+
+
+
+
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show-items");
+        } else {
+            entry.target.classList.remove("show-items");
+        }
+    });
+});
+
+const scrollScale = document.querySelectorAll(".scroll-scale");
+scrollScale.forEach((el) => observer.observe(el));
+
+const scrollBottom = document.querySelectorAll(".scroll-bottom");
+scrollBottom.forEach((el) => observer.observe(el));
+
+const scrollLeft = document.querySelectorAll(".scroll-left");
+scrollLeft.forEach((el) => observer.observe(el));
+
+const scrollRight = document.querySelectorAll(".scroll-right");
+scrollRight.forEach((el) => observer.observe(el));
 
 
