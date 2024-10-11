@@ -1,41 +1,75 @@
-const reviews = [
+const recensioni = [
     {
-        text: "Il nostro punto di riferimento per le cene speciali. Piatti deliziosi, presentazione impeccabile!",
-        name: "Alessandro Verdi",
+        testo: "Questo locale è fantastico! Servizio eccellente e atmosfera unica.",
+        nome: "Mario Rossi"
     },
     {
-        text: "La migliore esperienza culinaria che abbia mai avuto! Piatti autentici, atmosfera accogliente e personale gentilissimo.",
-        name: "Mario Rossi",
+        testo: "Ottimo cibo, location fantastica. Torneremo sicuramente!",
+        nome: "Giulia Bianchi"
     },
     {
-        text: "Un posto meraviglioso, la qualità del cibo è impareggiabile e lo staff è incredibilmente cordiale.",
-        name: "Giulia Bianchi",
-    },
+        testo: "Personale cordiale e sempre disponibile. Esperienza fantastica.",
+        nome: "Luca Verdi"
+    }
 ];
-
 
 let currentReviewIndex = 0;
 
-function displayReview(index) {
-    const reviewTextElement = document.querySelector('.testo-recensioni');
-    const clientNameElement = document.querySelector('.cliente-nome');
-    const review = reviews[index];
-    reviewTextElement.textContent = review.text;
-    clientNameElement.textContent = review.name;
+// Elementi DOM
+const testoRecensioni = document.getElementById('recensione-testo');
+const clienteNome = document.getElementById('cliente-nome');
+const prevArrow = document.getElementById('prev-arrow');
+const nextArrow = document.getElementById('next-arrow');
+
+// Funzione per aggiornare la recensione
+function aggiornaRecensione(index, direction) {
+    // Aggiunge la scia in uscita, direzione dipende da freccia
+    if (direction === 'next') {
+        testoRecensioni.classList.add('scia-uscita');
+        clienteNome.classList.add('scia-uscita');
+    } else {
+        testoRecensioni.classList.add('scia-uscita-prev');
+        clienteNome.classList.add('scia-uscita-prev');
+    }
+
+    setTimeout(() => {
+        // Aggiorna immediatamente il testo della recensione e il nome del cliente
+        testoRecensioni.textContent = recensioni[index].testo;
+        clienteNome.textContent = recensioni[index].nome;
+
+        // Rimuove la scia di uscita
+        testoRecensioni.classList.remove('scia-uscita', 'scia-uscita-prev');
+        clienteNome.classList.remove('scia-uscita', 'scia-uscita-prev');
+
+        // Aggiunge la scia in entrata
+        if (direction === 'next') {
+            testoRecensioni.classList.add('scia-entrata-next');
+            clienteNome.classList.add('scia-entrata-next');
+        } else {
+            testoRecensioni.classList.add('scia-entrata');
+            clienteNome.classList.add('scia-entrata');
+        }
+
+        // Rimuove la scia in entrata dopo la transizione
+        setTimeout(() => {
+            testoRecensioni.classList.remove('scia-entrata', 'scia-entrata-next');
+            clienteNome.classList.remove('scia-entrata', 'scia-entrata-next');
+        }, 1000);  // Durata della transizione (1 secondo)
+    }, 0);  // Riduce il ritardo prima di aggiornare a 100ms (quasi immediato)
 }
 
-document.querySelector('.prev-arrow').addEventListener('click', () => {
-    currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
-    displayReview(currentReviewIndex);
+// Eventi per le frecce
+nextArrow.addEventListener('click', () => {
+    currentReviewIndex = (currentReviewIndex + 1) % recensioni.length;  // Avanza alla prossima recensione
+    aggiornaRecensione(currentReviewIndex, 'next');
 });
 
-document.querySelector('.next-arrow').addEventListener('click', () => {
-    currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
-    displayReview(currentReviewIndex);
+prevArrow.addEventListener('click', () => {
+    currentReviewIndex = (currentReviewIndex - 1 + recensioni.length) % recensioni.length;  // Torna alla recensione precedente
+    aggiornaRecensione(currentReviewIndex, 'prev');
 });
 
-// Display the first review on page load
-displayReview(currentReviewIndex);
+
 
 //scroll
 
@@ -105,63 +139,46 @@ document.addEventListener('DOMContentLoaded', function () {
             backToHome.style.display = 'none';
         }
     });
+    // Aggiungi scroll fluido alla freccia
+    backToHome.addEventListener('click', function (event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Scorrimento fluido
+        });
+    });
 });
+
+
 
 // home animation 
-document.addEventListener("DOMContentLoaded", function () {
-    const h1 = document.querySelector(".container-corpo h1");
-    const p = document.querySelector(".container-corpo p");
-    const a = document.querySelector(".container-corpo a");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const h1 = document.querySelector(".container-corpo h1");
+//     const p = document.querySelector(".container-corpo p");
+//     const a = document.querySelector(".container-corpo a");
 
-    function showElements() {
-        // Mostra gli elementi uno alla volta
-        setTimeout(() => {
-            h1.style.opacity = '1';
-            h1.style.transform = 'translateY(0)';
-        }, 2000);
+//     function showElements() {
+//         // Mostra gli elementi uno alla volta
+//         setTimeout(() => {
+//             h1.style.opacity = '1';
+//             h1.style.transform = 'translateY(0)';
+//         }, 2000);
 
-        setTimeout(() => {
-            p.style.opacity = '1';
-            p.style.transform = 'translateY(0)';
-        }, 4000);
+//         setTimeout(() => {
+//             p.style.opacity = '1';
+//             p.style.transform = 'translateY(0)';
+//         }, 4000);
 
-        setTimeout(() => {
-            a.style.opacity = '1';
-            a.style.transform = 'translateY(0)';
-        }, 6000);
-    }
+//         setTimeout(() => {
+//             a.style.opacity = '1';
+//             a.style.transform = 'translateY(0)';
+//         }, 6000);
+//     }
 
-    function hideElements() {
-        // Nascondi gli elementi uno alla volta (prima scompare l'h1, poi il p, infine l'a)
-        setTimeout(() => {
-            h1.style.opacity = '0';
-            h1.style.transform = 'translateY(20px)';
-        }, 0);
-
-        setTimeout(() => {
-            p.style.opacity = '0';
-            p.style.transform = 'translateY(20px)';
-        }, 2000);
-
-        setTimeout(() => {
-            a.style.opacity = '0';
-            a.style.transform = 'translateY(20px)';
-        }, 4000);
-    }
-
-    function cycleAnimation() {
-        hideElements(); // Prima nascondi tutto
-        setTimeout(() => {
-            showElements(); // Dopo inizia a mostrare di nuovo
-        }, 3000); // Attendi 3 secondi prima di ricominciare
-    }
-
-    // Richiama la funzione ogni 11 secondi (6 secondi di animazione + 5 di pausa)
-    setInterval(cycleAnimation, 18000);
 
     // Esegui la funzione la prima volta
-    showElements();
-});
+//     showElements();
+// });
 
 
 
@@ -187,6 +204,9 @@ scrollScale.forEach((el) => observer.observe(el));
 const scrollBottom = document.querySelectorAll(".scroll-bottom");
 scrollBottom.forEach((el) => observer.observe(el));
 
+const scrollTop = document.querySelectorAll(".scroll-top");
+scrollTop.forEach((el) => observer.observe(el));
+
 const scrollLeft = document.querySelectorAll(".scroll-left");
 scrollLeft.forEach((el) => observer.observe(el));
 
@@ -194,3 +214,35 @@ const scrollRight = document.querySelectorAll(".scroll-right");
 scrollRight.forEach((el) => observer.observe(el));
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//gallery
+document.addEventListener('DOMContentLoaded', function () {
+    const item = document.querySelectorAll('.gallery-item');
+
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');  // Aggiunge la classe quando il box è visibile
+            } else {
+                entry.target.classList.remove('visible');  // Rimuove la classe quando il box esce dal viewport
+            }
+        });
+    }, { threshold: 0.2 });
+
+    item.forEach(function (box) {
+        observer.observe(box);
+    });
+});

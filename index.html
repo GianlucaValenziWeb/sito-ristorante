@@ -47,7 +47,7 @@
         <!-- SECTION HOME -->
         <section id="home" class="section">
             <div class="overlay"></div>
-            <div class="container-corpo">
+            <div class="container-corpo scroll-scale">
                 <h1>La Cucina Italiana</h1>
                 <p> Benvenuti nel cuore della cucina italiana, dove tradizione e innovazione si incontrano per
                     offrire un'esperienza culinaria indimenticabile. Ogni piatto che serviamo è preparato con
@@ -128,7 +128,7 @@
         <!-- GALLERY -->
         <section id="gallery">
             <h2 class="scroll-scale">~ Gallery ~</h2>
-            <div class="gallery-grid">
+            <div class="gallery-grid scroll-scale">
                 <div class="gallery-item">
                     <img src="images/interno-1.jpg" alt="Interno del ristorante 1">
                 </div>
@@ -513,20 +513,20 @@
 
         <!-- RECENSIONI -->
         <section id="recensioni">
-            <div class="container-recensioni scroll-scale">
+            <div class="container-recensioni scroll-scale" id="recensione">
                 <h2>~ Cosa dicono di noi ~</h2>
                 <div class="contenuto-recensioni">
                     <span class="virgolette">“</span>
-                    <p class="testo-recensioni"></p>
+                    <p class="testo-recensioni" id="recensione-testo">Questo locale è fantastico! Servizio eccellente.</p>
                     <span class="virgolette">”</span>
                     <div class="cliente-info">
-                        <h3 class="cliente-nome"></h3>
+                        <h3 class="cliente-nome" id="cliente-nome">Mario Rossi</h3>
                         <p class="cliente-title">Cliente del locale</p>
                     </div>
                 </div>
                 <div class="nav-arrows">
-                    <span class="prev-arrow"><i class="ri-arrow-left-s-line"></i></span>
-                    <span class="next-arrow"><i class="ri-arrow-right-s-line"></i></span>
+                    <span class="prev-arrow" id="prev-arrow"><i class="ri-arrow-left-s-line"></i></span>
+                    <span class="next-arrow" id="next-arrow"><i class="ri-arrow-right-s-line"></i></span>
                 </div>
             </div>
         </section>
@@ -632,15 +632,15 @@
             </div>
         </footer>
 
-        <div class="footer-bottom scroll-scale">
+        <div class="footer-bottom">
             <p>&copy; 2024 Gianluca Valenzi. All Rights Reserved.</p>
         </div>
     </section>
 
-    <a href="#home" class="arrow-up"><i class="ri-arrow-up-line"></i></a>
+    <a href="#home" class="arrow-up scroll-top"><i class="ri-arrow-up-line "></i></a>
 
 
-    
+
 
 </body>
 <script src="script.js"></script>

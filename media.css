@@ -267,16 +267,22 @@
     transition: 3s;
 }
 
+.scroll-top {
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
+
 .scroll-left {
     opacity: 0;
     transform: translateX(-300px);
-    transition: 4s;
+    transition: 3s;
 }
 
 .scroll-right {
     opacity: 0;
     transform: translateX(300px);
-    transition: 4s;
+    transition: 3s;
 }
 
 .show-items {
