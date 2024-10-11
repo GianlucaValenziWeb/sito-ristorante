@@ -3,21 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="application-name" content="">
+    <meta name="description"
+        content="Lavoro di Gianluca Valenzi. Questo sito è una dimostrazione delle mie skills come sviluppatore web.">
+    <meta name="application-name" content="gianlucavalenzi.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cucina Italiana</title>
     <!-- FAVICON -->
     <link rel="icon" href="images/favicon-32x32.jpg">
     <!-- CSS -->
-    <link rel="stylesheet" rel="preload" href="style.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" rel="preload" href="media.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" rel="preload" href="style.css">
+    <link rel="stylesheet" rel="preload" href="media.css">
     <!-- ICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
         integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- DEVICON -->
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 
 <body>
@@ -30,22 +29,28 @@
                 </li>
                 <input type="checkbox" id="check">
                 <span class="menu">
+                    <!-- <ul> -->
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#info" class="nav-link">Chi siamo</a></li>
                     <li><a href="#gallery" class="nav-link">Gallery</a></li>
                     <li><a href="#menu" class="nav-link">Menù</a></li>
                     <li><a href="#recensioni" class="nav-link">Recensioni</a></li>
                     <li><a href="#contatti" class="nav-link">Contatti</a></li>
-                    <label for="check" class="nav-toggle" id="close-menu"><i class="ri-close-large-line"></i></label>
+                    <label for="check" class="nav-toggle" id="close-menu">
+                        <i class="ri-close-large-line"></i>
+                    </label>
+                    <!-- </ul> -->
                 </span>
-                <label for="check" class="nav-toggle" id="open-menu"><i class="ri-menu-line"></i> </label>
+                <label for="check" class="nav-toggle" id="open-menu">
+                    <i class="ri-menu-line"></i>
+                </label>
             </ul>
         </nav>
     </header>
 
     <main>
         <!-- SECTION HOME -->
-        <section id="home" class="section">
+        <section id="home" class="section ">
             <div class="overlay"></div>
             <div class="container-corpo scroll-scale">
                 <h1>La Cucina Italiana</h1>
@@ -95,6 +100,7 @@
                     <img src="images/chef.jpg" alt="Foto 2">
                 </div>
             </div>
+
             <!-- img staff -->
             <div class="content-row">
                 <div class="image scroll-left">
@@ -517,7 +523,8 @@
                 <h2>~ Cosa dicono di noi ~</h2>
                 <div class="contenuto-recensioni">
                     <span class="virgolette">“</span>
-                    <p class="testo-recensioni" id="recensione-testo">Questo locale è fantastico! Servizio eccellente.</p>
+                    <p class="testo-recensioni" id="recensione-testo">Questo locale è fantastico! Servizio eccellente.
+                    </p>
                     <span class="virgolette">”</span>
                     <div class="cliente-info">
                         <h3 class="cliente-nome" id="cliente-nome">Mario Rossi</h3>
@@ -539,9 +546,7 @@
             <div class="container-contatti">
                 <div class="container-sx scroll-bottom">
                     <div class="map-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5940.245777004493!2d12.489655974998296!3d41.89021416465722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1727366197549!5m2!1sit!2sit"
-                            loading="lazy">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5940.245777004493!2d12.489655974998296!3d41.89021416465722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1727366197549!5m2!1sit!2sit" loading="lazy" title="myframe">
                         </iframe>
                     </div>
                 </div>
@@ -638,13 +643,7 @@
     </section>
 
     <a href="#home" class="arrow-up scroll-top"><i class="ri-arrow-up-line "></i></a>
-
-
-
-
 </body>
 <script src="script.js"></script>
-
-
 
 </html>

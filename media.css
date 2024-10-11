@@ -4,7 +4,6 @@
     .menu-item {
         flex-basis: 25%;
         padding: 10px;
-        /* Ogni elemento occupa il 30% dello spazio disponibile */
     }
 
     hr {
@@ -36,8 +35,6 @@
     }
 }
 
-
-/* Layout responsive */
 @media (max-width: 970px) {
     #home {
         height: 100%;
@@ -50,7 +47,6 @@
     }
 
     .container-corpo .container-img img {
-        /* width: 400px; */
         margin-bottom: 30px;
     }
 }
@@ -175,15 +171,12 @@
     .testo-recensioni {
         font-size: 1.2rem;
     }
-
-
 }
 
 @media screen and (max-width: 550px) {
 
     /* HOME */
     #home {
-        /* padding: 100px 0; */
         height: 100%;
     }
 

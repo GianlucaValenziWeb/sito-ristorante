@@ -8,14 +8,12 @@
     scroll-behavior: smooth;
 }
 
-/* Imposta altezza minima per il body */
 html,
 body {
     height: 100%;
     --color1: #ff7003;
     --color3: #ebeaea;
     --color2: #1e1b1b;
-    /* background-color: var(--color2); */
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -125,7 +123,6 @@ header::after {
 }
 
 .logo a:hover {
-    /* color: var(--color1); */
     text-shadow: 0 0 18px var(--color1);
 }
 
@@ -143,7 +140,7 @@ header::after {
     padding-left: 40px;
 }
 
-.menu {
+.menu{
     display: flex;
 }
 
@@ -153,7 +150,6 @@ header::after {
 
 .menu li a {
     display: inline-block;
-    /* color: var(--color3); */
     color: #fff;
     text-align: center;
     position: relative;
@@ -230,7 +226,6 @@ header::after {
 
 .container-corpo p {
     color: var(--color3);
-    line-height: 1.5;
     padding-bottom: 30px;
     line-height: 1.6;
     font-size: 1.1rem;
@@ -239,11 +234,10 @@ header::after {
 
 .btn-chi-siamo {
     padding: 12px 30px;
-    background-color: var(--color1);
-    /* Arancione */
-    color: white;
+    background-color: #924102;
+    color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border-radius: 25px;
     transition: box-shadow 0.3s ease;
 }
@@ -251,7 +245,7 @@ header::after {
 .btn-chi-siamo:hover {
     box-shadow: 0 0 8px var(--color1);
 }
-/* -------- CHI SIAMO -------- */
+/* ---------------------------- CHI SIAMO ------------------------ */
 #info {
     width: 100%;
     padding: 50px 0;
@@ -271,7 +265,6 @@ header::after {
     padding: 0 40px;
     max-width: 600px;
     width: auto;
-    /* height: 400px; */
     height: auto;
 }
 
@@ -316,7 +309,6 @@ header::after {
 }
 
 /*  ------------------------------- GALLERY ------------------------------- */
-/* Style per la sezione Gallery */
 #gallery {
     padding: 60px;
     background-color: var(--color2);
@@ -345,9 +337,7 @@ header::after {
     width: auto;
     height: 240px;
     opacity: 0;
-    /* Inizialmente invisibile */
     transform: translateY(50px);
-    /* Posizione iniziale fuori schermo */
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
@@ -355,9 +345,7 @@ header::after {
 
 .gallery-item.visible {
     opacity: 1;
-    /* Quando visibile, completamente opaco */
     transform: translateY(0);
-    /* Si porta alla posizione normale */
 }
 
 .gallery-item img {
@@ -369,12 +357,10 @@ header::after {
 
 .gallery-item:hover img {
     transform: scale(1.1);
-    /* Zoom effetto al passaggio del mouse */
 }
 
 
 /*  ------------------------------ MENU ----------------------------- */
-/* Stile generale */
 #menu {
     height: 100%;
     background-image: url(images/sfondo-lavagna.jpg);
@@ -388,16 +374,12 @@ header::after {
     padding-bottom: 20px;
 }
 
-/* Container delle categorie del menu */
 .menu-categories {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-
-    /* transition: all .9s; */
-
 }
 
 .contenuto {
@@ -407,15 +389,12 @@ header::after {
 }
 
 #menu-content {
-    /* background-color: #333; */
     width: 740px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-/* Stile delle categorie del menu */
 .menu-item {
     text-align: center;
     cursor: pointer;
@@ -438,7 +417,6 @@ header::after {
     color: #ccc;
 }
 
-/* Barra sotto ogni sezione del menu */
 .menu-bar {
     width: 100%;
     height: 5px;
@@ -447,7 +425,6 @@ header::after {
     margin-top: 10px;
 }
 
-/* Stile del contenuto del menu */
 .menu-details {
     display: none;
     padding-top: 20px;
@@ -601,28 +578,24 @@ hr {
 /* Effetto scia per il testo della recensione */
 .scia-uscita {
     transform: translateX(100%);
-    /* Esce verso destra per default */
     filter: blur(10px);
     opacity: 0;
 }
 
 .scia-uscita-prev {
     transform: translateX(-100%);
-    /* Esce verso sinistra per il prev */
     filter: blur(10px);
     opacity: 0;
 }
 
 .scia-entrata {
     transform: translateX(-100%);
-    /* Entra da sinistra per default */
     filter: blur(10px);
     opacity: 0;
 }
 
 .scia-entrata-next {
     transform: translateX(100%);
-    /* Entra da destra per il next */
     filter: blur(10px);
     opacity: 0;
 }

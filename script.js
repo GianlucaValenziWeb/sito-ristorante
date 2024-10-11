@@ -1,3 +1,4 @@
+// Cambio di recensione
 const recensioni = [
     {
         testo: "Questo locale è fantastico! Servizio eccellente e atmosfera unica.",
@@ -69,12 +70,9 @@ prevArrow.addEventListener('click', () => {
     aggiornaRecensione(currentReviewIndex, 'prev');
 });
 
+/* FINE RECENSIONI */
 
-
-//scroll
-
-
-// menu 
+// Menu
 window.onload = function () {
     showMenu('antipasti');
 };
@@ -99,11 +97,9 @@ function showMenu(menuId) {
     document.getElementById(menuId + '-bar').style.backgroundColor = '#ff7003';
 }
 
+/* FINE MENU */
 
-
-
-
-
+// Scroll
 document.addEventListener('DOMContentLoaded', function () {
     var navLinks = document.querySelectorAll('.nav-link');
     var check = document.getElementById('check');
@@ -114,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function () {
             check.checked = false;
         });
     });
-
 
     // Aggiunge/rimuove la classe 'active' ai link di navigazione in base alla sezione visibile
     var observer = new IntersectionObserver(function (entries) {
@@ -139,6 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
             backToHome.style.display = 'none';
         }
     });
+
     // Aggiungi scroll fluido alla freccia
     backToHome.addEventListener('click', function (event) {
         event.preventDefault();
@@ -148,46 +144,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+/* FINE SCROLL + FRECCIA */
 
-
-
-// home animation 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const h1 = document.querySelector(".container-corpo h1");
-//     const p = document.querySelector(".container-corpo p");
-//     const a = document.querySelector(".container-corpo a");
-
-//     function showElements() {
-//         // Mostra gli elementi uno alla volta
-//         setTimeout(() => {
-//             h1.style.opacity = '1';
-//             h1.style.transform = 'translateY(0)';
-//         }, 2000);
-
-//         setTimeout(() => {
-//             p.style.opacity = '1';
-//             p.style.transform = 'translateY(0)';
-//         }, 4000);
-
-//         setTimeout(() => {
-//             a.style.opacity = '1';
-//             a.style.transform = 'translateY(0)';
-//         }, 6000);
-//     }
-
-
-    // Esegui la funzione la prima volta
-//     showElements();
-// });
-
-
-
-
-
-
-
-
-
+// Effetti pagine
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -213,22 +172,9 @@ scrollLeft.forEach((el) => observer.observe(el));
 const scrollRight = document.querySelectorAll(".scroll-right");
 scrollRight.forEach((el) => observer.observe(el));
 
+/* FINE EFFETTI PAGINE */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//gallery
+// Foto Gallery
 document.addEventListener('DOMContentLoaded', function () {
     const item = document.querySelectorAll('.gallery-item');
 
@@ -246,3 +192,4 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(box);
     });
 });
+/* FINE FOTO GALLERY */
