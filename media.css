@@ -70,7 +70,7 @@
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: #6262576b;
+        background-color: #0000006b;
         backdrop-filter: blur(14px);
         transition: right .5s;
     }
@@ -178,6 +178,13 @@
     /* HOME */
     #home {
         height: 100%;
+    }
+
+    .container-corpo h1 {
+        font-size: 2.5rem;
+    }
+    .container-corpo p {
+        font-size: 1rem;
     }
 
     /* GALLERY */
