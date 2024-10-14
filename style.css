@@ -47,17 +47,6 @@ p {
     padding: 0;
 }
 
-#home,
-#info,
-#contatti {
-    background-size: cover;
-    background-position: center;
-}
-
-#info {
-    background-image: url(images/sfondo-lavagna.jpg);
-}
-
 .arrow-up {
     overflow: hidden;
     position: fixed;
@@ -140,7 +129,7 @@ header::after {
     padding-left: 40px;
 }
 
-.menu{
+.menu {
     display: flex;
 }
 
@@ -196,6 +185,8 @@ header::after {
     align-items: center;
     position: relative;
     z-index: 1;
+    background-size: cover;
+    background-position: center;
 }
 
 #home .overlay {
@@ -245,11 +236,14 @@ header::after {
 .btn-chi-siamo:hover {
     box-shadow: 0 0 8px var(--color1);
 }
+
 /* ---------------------------- CHI SIAMO ------------------------ */
 #info {
     width: 100%;
     padding: 50px 0;
     height: 100%;
+    background-image: url(images/sfondo-lavagna.jpg);
+    background-size: cover;
 }
 
 .content-row {
@@ -495,7 +489,7 @@ hr {
 }
 
 .container-recensioni {
-    max-width: 800px;
+    max-width: 300px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -603,6 +597,7 @@ hr {
 /* -------------------------- CONTATTI --------------------------- */
 #contatti {
     background-image: url(images/sfondo-lavagna.jpg);
+    background-size: cover;
     height: 100%;
     padding: 60px 0px;
 }
