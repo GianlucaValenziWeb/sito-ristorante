@@ -23,12 +23,12 @@
     <!-- NAVBAR -->
     <header id="header">
         <nav class="nav-menu">
-            <ul class="navbar">
+            <div class="navbar">
                 <li class="logo">
                     <div id="logo"><a href="#">Cucina Italiana</a></div>
                 </li>
                 <input type="checkbox" id="check">
-                <span class="menu">
+                <ul class="menu">
                     <!-- <ul> -->
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#info" class="nav-link">Chi siamo</a></li>
@@ -40,11 +40,11 @@
                         <i class="ri-close-large-line"></i>
                     </label>
                     <!-- </ul> -->
-                </span>
+                </ul>
                 <label for="check" class="nav-toggle" id="open-menu">
                     <i class="ri-menu-line"></i>
                 </label>
-            </ul>
+            </div>
         </nav>
     </header>
 
@@ -574,12 +574,11 @@
         </section>
 
     </main>
-
-    <section id="footer">
+ <section id="footer">
         <footer class="container-footer">
             <div class="footer-section scroll-scale">
-                <ul>
-                    <h3>Links</h3>
+                <h3>Links</h3>
+                <ul class="footer-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#info">Chi siamo</a></li>
                     <li><a href="#gallery">Gallery</a></li>
@@ -590,8 +589,8 @@
             </div>
 
             <div class="footer-section scroll-scale">
+                <h3 id="t-social">Social</h3>
                 <ul class="social-icons">
-                    <h3 id="t-social">Social</h3>
                     <li>
                         <a href="" target="_blank">
                             <i class="ri-facebook-circle-fill"></i>
@@ -619,20 +618,19 @@
                     <li>
                         <a href="" target="_blank">
                             <i class="ri-mail-line"></i>
-                            <span>CucinaItaliana@gmail.com</span>
+                            <span>CucinaItaliana <br> @gmail.com</span>
                         </a>
                     </li>
-
                 </ul>
             </div>
 
             <div class="footer-section scroll-scale">
-                <div class="container-cont">
-                    <h3>Orari di apertura:</h3>
+                <h3>Orari di apertura:</h3>
+                <div class="footer-hours">
                     <p>Da Lunedì alla domenica!</p>
                     <p>Ore 12.00-15:00 18:00-24:00</p>
-                    <p>Martedi chiuso</p>
-                    <p>Che aspetti,<a href="#contatti">Vieni a trovarci</a></p>
+                    <p>Martedì chiuso</p>
+                    <p>Che aspetti, <a href="#contatti">Vieni a trovarci</a></p>
                 </div>
             </div>
         </footer>
